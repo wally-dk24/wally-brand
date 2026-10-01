@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wally Brand — design system preview</title>
+<link rel="stylesheet" href="brand/brand.css">
+</head>
+<body class="wb">
+<div class="wb-page">
+
+  <header class="wb-header">
+    <div class="wb-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    </div>
+    <div class="wb-title">
+      <h1><span class="wb-tool">brand</span></h1>
+      <p>The shared look of Wally's tools — one palette, one voice.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wb-card">
+      <h2>Buttons &amp; badges</h2>
+      <p class="wb-sub">Every tool gets the same controls, so learning one teaches all five.</p>
+      <div class="wb-btn-row" style="margin-top:0">
+        <button class="wb-btn wb-btn-primary">Run it</button>
+        <button class="wb-btn">Secondary</button>
+        <span class="wb-badge b-amber">amber</span>
+        <span class="wb-badge b-green">ok</span>
+        <span class="wb-badge b-red">fail</span>
+        <span class="wb-badge b-blue">info</span>
+      </div>
+    </div>
+
+    <div class="wb-card">
+      <h2>Forms</h2>
+      <p class="wb-sub">Labels up top, hints underneath. Same everywhere.</p>
+      <div class="wb-field">
+        <label>Example input</label>
+        <input class="wb-input" placeholder="Type something…">
+        <div class="wb-hint">A quiet hint, for when the label isn't enough.</div>
+      </div>
+      <div class="wb-field">
+        <label>Example textarea</label>
+        <textarea class="wb-textarea" placeholder="A longer thought…"></textarea>
+      </div>
+    </div>
+
+    <div class="wb-card">
+      <h2>Terminal</h2>
+      <p class="wb-sub">For the moments a tool wants to show its work.</p>
+      <div class="wb-term"><span class="t-dim">$</span> decide --set spam_check --text "…"
+<span class="t-green">winner=yes</span> <span class="t-dim">conf=0.98 backend=Liquid escalated=false</span></div>
+    </div>
+
+    <div class="wb-card">
+      <h2>Distribution bars</h2>
+      <p class="wb-sub">Decisions, scores, anything with a spread.</p>
+      <div class="wb-dist">
+        <div class="wb-dist-row">
+          <div class="wb-dist-label">yes</div>
+          <div class="wb-dist-track"><div class="wb-dist-fill fill-green" style="width:82%"></div></div>
+          <div class="wb-dist-val">0.820</div>
+        </div>
+        <div class="wb-dist-row">
+          <div class="wb-dist-label">no</div>
+          <div class="wb-dist-track"><div class="wb-dist-fill fill-red" style="width:18%"></div></div>
+          <div class="wb-dist-val">0.180</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wb-card">
+      <h2>Key / value</h2>
+      <dl class="wb-kv">
+        <dt>image</dt><dd>wallydk24/decide:latest</dd>
+        <dt>platforms</dt><dd>linux/amd64 · linux/arm64 · linux/386</dd>
+        <dt>port</dt><dd>8080</dd>
+      </dl>
+    </div>
+
+    <div class="wb-card">
+      <h2>The family</h2>
+      <p class="wb-sub">One icon style, one stroke, every tool.</p>
+      <div class="wb-grid">
+        <div class="wb-card" style="margin:0;text-align:center">
+          <svg class="wb-ico" style="width:34px;height:34px;color:var(--wb-amber-soft)" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="8.5 12.25 11 14.75 15.5 9.5"/></svg>
+          <h2 style="margin-top:8px">decide</h2>
+        </div>
+        <div class="wb-card" style="margin:0;text-align:center">
+          <svg class="wb-ico" style="width:34px;height:34px;color:var(--wb-amber-soft)" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <h2 style="margin-top:8px">wallypedia</h2>
+        </div>
+        <div class="wb-card" style="margin:0;text-align:center">
+          <svg class="wb-ico" style="width:34px;height:34px;color:var(--wb-amber-soft)" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <h2 style="margin-top:8px">trendwatch</h2>
+        </div>
+        <div class="wb-card" style="margin:0;text-align:center">
+          <svg class="wb-ico" style="width:34px;height:34px;color:var(--wb-amber-soft)" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <h2 style="margin-top:8px">receiptchain</h2>
+        </div>
+        <div class="wb-card" style="margin:0;text-align:center">
+          <svg class="wb-ico" style="width:34px;height:34px;color:var(--wb-amber-soft)" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="18" rx="1"/><rect x="11" y="3" width="6" height="12" rx="1"/><rect x="11" y="17" width="6" height="4" rx="1"/></svg>
+          <h2 style="margin-top:8px">walboard</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wb-footer">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+    <span>Built by <strong>Wally</strong> · wally-dk24</span>
+    <div class="wb-spacer"></div>
+    <span>wally-brand</span>
+  </footer>
+
+</div>
+</body>
+</html>
